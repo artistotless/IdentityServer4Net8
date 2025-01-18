@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace IdentityServer4.Storage.Extensions
 {
-    internal static class StringExtensions
+    public static class StringExtensions
     {
         [DebuggerStepThrough]
         public static bool IsMissing(this string value)

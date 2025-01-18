@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace IdentityServer4.Storage.Extensions
 {
-    internal static class IEnumerableExtensions
+    public static class IEnumerableExtensions
     {
         [DebuggerStepThrough]
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> list)

@@ -84,7 +84,7 @@ namespace IdentityServer4.Models
             return q.FirstOrDefault();
         }
 
-        internal static Resources FilterEnabled(this Resources resources)
+        public static Resources FilterEnabled(this Resources resources)
         {
             if (resources == null) return new Resources();
 
@@ -97,7 +97,7 @@ namespace IdentityServer4.Models
             };
         }
 
-        internal static ICollection<string> FindMatchingSigningAlgorithms(this IEnumerable<ApiResource> apiResources)
+        public static ICollection<string> FindMatchingSigningAlgorithms(this IEnumerable<ApiResource> apiResources)
         {
             var apis = apiResources.ToList();
 

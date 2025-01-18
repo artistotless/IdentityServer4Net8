@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace IdentityServer4.Hosting
 {
-    internal class EndpointRouter : IEndpointRouter
+    public class EndpointRouter : IEndpointRouter
     {
         private readonly IEnumerable<Endpoint> _endpoints;
         private readonly IdentityServerOptions _options;

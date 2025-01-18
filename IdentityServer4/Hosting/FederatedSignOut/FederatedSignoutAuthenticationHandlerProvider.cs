@@ -14,7 +14,7 @@ namespace IdentityServer4.Hosting.FederatedSignOut
     // we assume they are handling the federated signout in an iframe. 
     // based on this assumption, we then render our federated signout iframes 
     // to any current clients.
-    internal class FederatedSignoutAuthenticationHandlerProvider : IAuthenticationHandlerProvider
+    public class FederatedSignoutAuthenticationHandlerProvider : IAuthenticationHandlerProvider
     {
         private readonly IAuthenticationHandlerProvider _provider;
         private readonly IHttpContextAccessor _httpContextAccessor;

@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace IdentityServer4.Hosting.FederatedSignOut
 {
-    internal class AuthenticationRequestSignInHandlerWrapper : AuthenticationRequestSignOutHandlerWrapper, IAuthenticationSignInHandler
+    public class AuthenticationRequestSignInHandlerWrapper : AuthenticationRequestSignOutHandlerWrapper, IAuthenticationSignInHandler
     {
         private readonly IAuthenticationSignInHandler _inner;
 

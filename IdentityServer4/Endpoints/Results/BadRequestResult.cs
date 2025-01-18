@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    internal class BadRequestResult : IEndpointResult
+    public class BadRequestResult : IEndpointResult
     {
         public string Error { get; set; }
         public string ErrorDescription { get; set; }
@@ -36,7 +36,7 @@ namespace IdentityServer4.Endpoints.Results
             }
         }
 
-        internal class ResultDto
+        public class ResultDto
         {
             public string error { get; set; }
             public string error_description { get; set; }

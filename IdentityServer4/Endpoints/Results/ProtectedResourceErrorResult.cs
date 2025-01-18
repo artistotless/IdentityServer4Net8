@@ -11,7 +11,7 @@ using Microsoft.Net.Http.Headers;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    internal class ProtectedResourceErrorResult : IEndpointResult
+    public class ProtectedResourceErrorResult : IEndpointResult
     {
         public string Error;
         public string ErrorDescription;

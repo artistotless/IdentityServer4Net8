@@ -259,7 +259,7 @@ namespace Microsoft.Extensions.DependencyInjection
             return builder;
         }
 
-        internal static void AddTransientDecorator<TService, TImplementation>(this IServiceCollection services)
+        public static void AddTransientDecorator<TService, TImplementation>(this IServiceCollection services)
             where TService : class
             where TImplementation : class, TService
         {
@@ -267,7 +267,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddTransient<TService, TImplementation>();
         }
 
-        internal static void AddDecorator<TService>(this IServiceCollection services)
+        public static void AddDecorator<TService>(this IServiceCollection services)
         {
             var registration = services.LastOrDefault(x => x.ServiceType == typeof(TService));
             if (registration == null)

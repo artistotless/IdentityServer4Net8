@@ -13,7 +13,7 @@ using System.Net;
 
 namespace IdentityServer4.Endpoints
 {
-    internal class EndSessionEndpoint : IEndpointHandler
+    public class EndSessionEndpoint : IEndpointHandler
     {
         private readonly IEndSessionRequestValidator _endSessionRequestValidator;
 

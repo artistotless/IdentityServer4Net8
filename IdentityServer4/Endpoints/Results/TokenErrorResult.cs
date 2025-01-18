@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    internal class TokenErrorResult : IEndpointResult
+    public class TokenErrorResult : IEndpointResult
     {
         public TokenErrorResponse Response { get; }
 
@@ -37,7 +37,7 @@ namespace IdentityServer4.Endpoints.Results
             await context.Response.WriteJsonAsync(dto);
         }
 
-        internal class ResultDto
+        public class ResultDto
         {
             public string error { get; set; }
             public string error_description { get; set; }

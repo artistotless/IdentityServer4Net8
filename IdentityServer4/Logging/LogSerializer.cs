@@ -10,7 +10,7 @@ namespace IdentityServer4.Logging
     /// <summary>
     /// Helper to JSON serialize object data for logging.
     /// </summary>
-    internal static class LogSerializer
+    public static class LogSerializer
     {
         static readonly JsonSerializerOptions Options = new JsonSerializerOptions
         {

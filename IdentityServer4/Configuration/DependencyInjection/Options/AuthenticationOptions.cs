@@ -28,7 +28,7 @@ namespace IdentityServer4.Configuration
         public bool CookieSlidingExpiration { get; set; } = false;
 
         /// <summary>
-        /// Specifies the SameSite mode for the internal authentication and temp cookie
+        /// Specifies the SameSite mode for the public authentication and temp cookie
         /// </summary>
         public SameSiteMode CookieSameSiteMode { get; set; } = SameSiteMode.None;
 

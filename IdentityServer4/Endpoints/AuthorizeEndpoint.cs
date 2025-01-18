@@ -15,7 +15,7 @@ using System.Net;
 
 namespace IdentityServer4.Endpoints
 {
-    internal class AuthorizeEndpoint : AuthorizeEndpointBase
+    public class AuthorizeEndpoint : AuthorizeEndpointBase
     {
         public AuthorizeEndpoint(
            IEventService events,

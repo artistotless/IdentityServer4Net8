@@ -18,7 +18,7 @@ using System.Security.Claims;
 
 namespace IdentityServer4.Validation
 {
-    internal class TokenValidator : ITokenValidator
+    public class TokenValidator : ITokenValidator
     {
         private readonly ILogger _logger;
         private readonly IdentityServerOptions _options;

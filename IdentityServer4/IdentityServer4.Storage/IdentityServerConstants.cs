@@ -5,7 +5,7 @@
 
 namespace IdentityServer4.Storage
 {
-    internal static class IdentityServerConstants
+    public static class IdentityServerConstants
     {
         public static class ProtocolTypes
         {

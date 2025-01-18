@@ -27,7 +27,7 @@ namespace IdentityServer4.Extensions
             return null;
         }
 
-        internal static bool HasApplicationFormContentType(this HttpRequest request)
+        public static bool HasApplicationFormContentType(this HttpRequest request)
         {
             if (request.ContentType is null) return false;
 

@@ -7,7 +7,7 @@ using IdentityServer4.ResponseHandling;
 
 namespace IdentityServer4.Logging.Models
 {
-    internal class AuthorizeResponseLog
+    public class AuthorizeResponseLog
     {
         public string SubjectId { get; set; }
         public string ClientId { get; set; }

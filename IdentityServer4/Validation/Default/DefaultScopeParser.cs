@@ -104,7 +104,7 @@ namespace IdentityServer4.Validation
             /// <summary>
             /// Ctor. Indicates success, but the scope should not be included in result.
             /// </summary>
-            internal ParseScopeContext(string rawScopeValue)
+            public ParseScopeContext(string rawScopeValue)
             {
                 RawValue = rawScopeValue;
             }

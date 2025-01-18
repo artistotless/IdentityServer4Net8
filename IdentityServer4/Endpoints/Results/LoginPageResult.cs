@@ -31,7 +31,7 @@ namespace IdentityServer4.Endpoints.Results
             _request = request ?? throw new ArgumentNullException(nameof(request));
         }
 
-        internal LoginPageResult(
+        public LoginPageResult(
             ValidatedAuthorizeRequest request,
             IdentityServerOptions options,
             IAuthorizationParametersMessageStore authorizationParametersMessageStore = null)

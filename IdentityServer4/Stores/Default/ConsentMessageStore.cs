@@ -6,7 +6,7 @@ using IdentityServer4.Models;
 
 namespace IdentityServer4.Stores
 {
-    internal class ConsentMessageStore : IConsentMessageStore
+    public class ConsentMessageStore : IConsentMessageStore
     {
         protected readonly MessageCookie<ConsentResponse> Cookie;
 

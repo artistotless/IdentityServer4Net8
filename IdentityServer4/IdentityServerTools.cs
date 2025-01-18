@@ -17,7 +17,7 @@ namespace IdentityServer4
     /// </summary>
     public class IdentityServerTools
     {
-        internal readonly IHttpContextAccessor ContextAccessor;
+        public readonly IHttpContextAccessor ContextAccessor;
         private readonly ITokenCreationService _tokenCreation;
         private readonly ISystemClock _clock;
 

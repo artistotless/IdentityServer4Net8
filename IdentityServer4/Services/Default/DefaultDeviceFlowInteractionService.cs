@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace IdentityServer4.Services
 {
-    internal class DefaultDeviceFlowInteractionService : IDeviceFlowInteractionService
+    public class DefaultDeviceFlowInteractionService : IDeviceFlowInteractionService
     {
         private readonly IClientStore _clients;
         private readonly IUserSession _session;

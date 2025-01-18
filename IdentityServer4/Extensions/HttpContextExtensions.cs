@@ -63,13 +63,13 @@ namespace IdentityServer4.Extensions
         }
 
 
-        internal static void SetSignOutCalled(this HttpContext context)
+        public static void SetSignOutCalled(this HttpContext context)
         {
             if (context == null) throw new ArgumentNullException(nameof(context));
             context.Items[Constants.EnvironmentKeys.SignOutCalled] = "true";
         }
 
-        internal static bool GetSignOutCalled(this HttpContext context)
+        public static bool GetSignOutCalled(this HttpContext context)
         {
             return context.Items.ContainsKey(Constants.EnvironmentKeys.SignOutCalled);
         }
@@ -150,7 +150,7 @@ namespace IdentityServer4.Extensions
             return uri;
         }
 
-        internal static async Task<string> GetIdentityServerSignoutFrameCallbackUrlAsync(this HttpContext context, LogoutMessage logoutMessage = null)
+        public static async Task<string> GetIdentityServerSignoutFrameCallbackUrlAsync(this HttpContext context, LogoutMessage logoutMessage = null)
         {
             var userSession = context.RequestServices.GetRequiredService<IUserSession>();
             var user = await userSession.GetUserAsync();

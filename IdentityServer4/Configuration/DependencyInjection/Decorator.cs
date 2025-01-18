@@ -3,7 +3,7 @@
 
 namespace IdentityServer4.Configuration.DependencyInjection
 {
-    internal class Decorator<TService>
+    public class Decorator<TService>
     {
         public TService Instance { get; set; }
 
@@ -13,7 +13,7 @@ namespace IdentityServer4.Configuration.DependencyInjection
         }
     }
 
-    internal class Decorator<TService, TImpl> : Decorator<TService>
+    public class Decorator<TService, TImpl> : Decorator<TService>
         where TImpl : class, TService
     {
         public Decorator(TImpl instance) : base(instance)
@@ -21,7 +21,7 @@ namespace IdentityServer4.Configuration.DependencyInjection
         }
     }
 
-    internal class DisposableDecorator<TService> : Decorator<TService>, IDisposable
+    public class DisposableDecorator<TService> : Decorator<TService>, IDisposable
     {
         public DisposableDecorator(TService instance) : base(instance)
         {
