@@ -33,6 +33,6 @@ namespace IdentityServer4.Hosting.LocalApiAuthentication
         /// <summary>
         /// the HTTP context
         /// </summary>
-        public HttpContext HttpContext { get;  set; }
+        public HttpContext HttpContext { get; internal set; }
     }
 }

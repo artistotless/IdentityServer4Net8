@@ -11,7 +11,7 @@ using System.Net;
 
 namespace IdentityServer4.Endpoints
 {
-    public class DiscoveryKeyEndpoint : IEndpointHandler
+    internal class DiscoveryKeyEndpoint : IEndpointHandler
     {
         private readonly ILogger _logger;
 

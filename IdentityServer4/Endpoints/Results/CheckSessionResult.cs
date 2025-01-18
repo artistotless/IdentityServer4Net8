@@ -10,13 +10,13 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    public class CheckSessionResult : IEndpointResult
+    internal class CheckSessionResult : IEndpointResult
     {
         public CheckSessionResult()
         {
         }
 
-        public CheckSessionResult(IdentityServerOptions options)
+        internal CheckSessionResult(IdentityServerOptions options)
         {
             _options = options;
         }

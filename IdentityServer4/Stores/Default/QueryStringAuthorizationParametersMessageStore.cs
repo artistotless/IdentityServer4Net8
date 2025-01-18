@@ -7,8 +7,8 @@ using IdentityServer4.Models;
 
 namespace IdentityServer4.Stores
 {
-    // public just for testing
-    public class QueryStringAuthorizationParametersMessageStore : IAuthorizationParametersMessageStore
+    // internal just for testing
+    internal class QueryStringAuthorizationParametersMessageStore : IAuthorizationParametersMessageStore
     {
         public Task<string> WriteAsync(Message<IDictionary<string, string[]>> message)
         {

@@ -20,7 +20,7 @@ namespace IdentityServer4.Endpoints
     /// The revocation endpoint
     /// </summary>
     /// <seealso cref="IdentityServer4.Hosting.IEndpointHandler" />
-    public class TokenRevocationEndpoint : IEndpointHandler
+    internal class TokenRevocationEndpoint : IEndpointHandler
     {
         private readonly ILogger _logger;
         private readonly IClientSecretValidator _clientValidator;

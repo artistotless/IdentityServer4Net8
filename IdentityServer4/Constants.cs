@@ -7,7 +7,7 @@ using IdentityServer4.Models;
 
 namespace IdentityServer4
 {
-    public static class Constants
+    internal static class Constants
     {
         public const string IdentityServerName = "IdentityServer4";
         public const string IdentityServerAuthenticationType = IdentityServerName;

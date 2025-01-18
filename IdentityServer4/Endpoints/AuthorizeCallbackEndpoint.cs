@@ -17,7 +17,7 @@ using System.Net;
 
 namespace IdentityServer4.Endpoints
 {
-    public class AuthorizeCallbackEndpoint : AuthorizeEndpointBase
+    internal class AuthorizeCallbackEndpoint : AuthorizeEndpointBase
     {
         private readonly IConsentMessageStore _consentResponseStore;
         private readonly IAuthorizationParametersMessageStore _authorizationParametersMessageStore;

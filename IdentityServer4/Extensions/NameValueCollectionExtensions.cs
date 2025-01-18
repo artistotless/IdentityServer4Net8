@@ -8,7 +8,7 @@ using System.Text.Encodings.Web;
 
 namespace IdentityServer4.Extensions
 {
-    public static class NameValueCollectionExtensions
+    internal static class NameValueCollectionExtensions
     {
         public static IDictionary<string, string[]> ToFullDictionary(this NameValueCollection source)
         {
@@ -125,7 +125,7 @@ namespace IdentityServer4.Extensions
             return dict;
         }
 
-        public static string ConvertFormUrlEncodedSpacesToUrlEncodedSpaces(string str)
+        internal static string ConvertFormUrlEncodedSpacesToUrlEncodedSpaces(string str)
         {
             if ((str != null) && (str.IndexOf('+') >= 0))
             {

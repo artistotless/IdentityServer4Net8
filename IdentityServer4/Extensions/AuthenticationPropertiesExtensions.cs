@@ -13,8 +13,8 @@ namespace IdentityServer4.Extensions
     /// </summary>
     public static class AuthenticationPropertiesExtensions
     {
-        public const string SessionIdKey = "session_id";
-        public const string ClientListKey = "client_list";
+        internal const string SessionIdKey = "session_id";
+        internal const string ClientListKey = "client_list";
 
         /// <summary>
         /// Gets the user's session identifier.

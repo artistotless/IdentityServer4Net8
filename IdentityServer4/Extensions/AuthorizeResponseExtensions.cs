@@ -8,7 +8,7 @@ using System.Collections.Specialized;
 
 namespace IdentityServer4.Models
 {
-    public static class AuthorizeResponseExtensions
+    internal static class AuthorizeResponseExtensions
     {
         public static NameValueCollection ToNameValueCollection(this AuthorizeResponse response)
         {

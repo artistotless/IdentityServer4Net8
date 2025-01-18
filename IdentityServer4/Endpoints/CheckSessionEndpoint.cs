@@ -10,7 +10,7 @@ using System.Net;
 
 namespace IdentityServer4.Endpoints
 {
-    public class CheckSessionEndpoint : IEndpointHandler
+    internal class CheckSessionEndpoint : IEndpointHandler
     {
         private readonly ILogger _logger;
 

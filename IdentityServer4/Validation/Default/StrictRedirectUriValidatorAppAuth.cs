@@ -69,7 +69,7 @@ namespace IdentityServer4.Validation
         /// <returns>
         /// <c>true</c> if <paramref name="requestedUri"/> is a valid Loopback URI; <c>false</c> otherwise.
         /// </returns>
-        public bool IsLoopback(string requestedUri)
+        internal bool IsLoopback(string requestedUri)
         {
             _logger.LogDebug("Checking for 127.0.0.1 redirect URI");
 

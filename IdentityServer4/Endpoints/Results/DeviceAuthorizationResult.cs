@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    public class DeviceAuthorizationResult : IEndpointResult
+    internal class DeviceAuthorizationResult : IEndpointResult
     {
         public DeviceAuthorizationResponse Response { get; }
 
@@ -35,7 +35,7 @@ namespace IdentityServer4.Endpoints.Results
             await context.Response.WriteJsonAsync(dto);
         }
 
-        public class ResultDto
+        internal class ResultDto
         {
             public string device_code { get; set; }
             public string user_code { get; set; }

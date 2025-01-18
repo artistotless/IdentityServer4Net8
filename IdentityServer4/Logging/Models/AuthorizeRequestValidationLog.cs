@@ -8,7 +8,7 @@ using IdentityServer4.Validation;
 
 namespace IdentityServer4.Logging.Models
 {
-    public class AuthorizeRequestValidationLog
+    internal class AuthorizeRequestValidationLog
     {
         public string ClientId { get; set; }
         public string ClientName { get; set; }

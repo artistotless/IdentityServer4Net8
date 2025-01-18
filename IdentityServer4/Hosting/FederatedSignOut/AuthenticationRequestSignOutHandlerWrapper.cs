@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace IdentityServer4.Hosting.FederatedSignOut
 {
-    public class AuthenticationRequestSignOutHandlerWrapper : AuthenticationRequestHandlerWrapper, IAuthenticationSignOutHandler
+    internal class AuthenticationRequestSignOutHandlerWrapper : AuthenticationRequestHandlerWrapper, IAuthenticationSignOutHandler
     {
         private readonly IAuthenticationSignOutHandler _inner;
 

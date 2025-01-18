@@ -39,7 +39,7 @@ namespace IdentityServer4.Endpoints.Results
             _url = url;
         }
 
-        public CustomRedirectResult(
+        internal CustomRedirectResult(
             ValidatedAuthorizeRequest request,
             string url,
             IdentityServerOptions options)

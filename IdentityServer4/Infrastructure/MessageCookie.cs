@@ -12,7 +12,7 @@ using System.Security.Cryptography;
 
 namespace IdentityServer4
 {
-    public class MessageCookie<TModel>
+    internal class MessageCookie<TModel>
     {
         private readonly ILogger _logger;
         private readonly IdentityServerOptions _options;

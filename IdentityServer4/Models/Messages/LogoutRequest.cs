@@ -94,7 +94,7 @@ namespace IdentityServer4.Models
         /// <summary>
         ///  Flag to indicate if the payload contains useful information or not to avoid serailization.
         /// </summary>
-        public bool ContainsPayload => ClientId.IsPresent() || ClientIds?.Any() == true;
+        internal bool ContainsPayload => ClientId.IsPresent() || ClientIds?.Any() == true;
     }
 
     /// <summary>

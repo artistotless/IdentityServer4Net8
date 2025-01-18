@@ -19,7 +19,7 @@ namespace IdentityServer4.Endpoints
     /// The device authorization endpoint
     /// </summary>
     /// <seealso cref="IdentityServer4.Hosting.IEndpointHandler" />
-    public class DeviceAuthorizationEndpoint : IEndpointHandler
+    internal class DeviceAuthorizationEndpoint : IEndpointHandler
     {
         private readonly IClientSecretValidator _clientValidator;
         private readonly IDeviceAuthorizationRequestValidator _requestValidator;

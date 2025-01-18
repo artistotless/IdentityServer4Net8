@@ -9,7 +9,7 @@ using Microsoft.Extensions.Options;
 
 namespace IdentityServer4.Configuration
 {
-    public class ConfigureInternalCookieOptions : IConfigureNamedOptions<CookieAuthenticationOptions>
+    internal class ConfigureInternalCookieOptions : IConfigureNamedOptions<CookieAuthenticationOptions>
     {
         private readonly IdentityServerOptions _idsrv;
 
@@ -70,7 +70,7 @@ namespace IdentityServer4.Configuration
         }
     }
 
-    public class PostConfigureInternalCookieOptions : IPostConfigureOptions<CookieAuthenticationOptions>
+    internal class PostConfigureInternalCookieOptions : IPostConfigureOptions<CookieAuthenticationOptions>
     {
         private readonly IdentityServerOptions _idsrv;
         private readonly IOptions<Microsoft.AspNetCore.Authentication.AuthenticationOptions> _authOptions;

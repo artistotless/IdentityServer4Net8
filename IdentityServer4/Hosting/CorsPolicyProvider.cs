@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace IdentityServer4.Hosting
 {
-    public class CorsPolicyProvider : ICorsPolicyProvider
+    internal class CorsPolicyProvider : ICorsPolicyProvider
     {
         private readonly ILogger _logger;
         private readonly ICorsPolicyProvider _inner;

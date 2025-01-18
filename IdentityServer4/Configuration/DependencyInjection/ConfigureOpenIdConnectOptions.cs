@@ -8,7 +8,7 @@ using Microsoft.Extensions.Options;
 
 namespace IdentityServer4.Configuration
 {
-    public class ConfigureOpenIdConnectOptions : IPostConfigureOptions<OpenIdConnectOptions>
+    internal class ConfigureOpenIdConnectOptions : IPostConfigureOptions<OpenIdConnectOptions>
     {
         private string[] _schemes;
         private readonly IHttpContextAccessor _httpContextAccessor;

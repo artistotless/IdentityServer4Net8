@@ -94,7 +94,7 @@ namespace IdentityServer4.Configuration
         /// <summary>
         /// Returns the matching named curve for RFC 7518 crv value
         /// </summary>
-        public static ECCurve GetCurveFromCrvValue(string crv)
+        internal static ECCurve GetCurveFromCrvValue(string crv)
         {
             return crv switch
             {
@@ -108,7 +108,7 @@ namespace IdentityServer4.Configuration
         /// <summary>
         /// Return the matching RFC 7518 crv value for curve
         /// </summary>
-        public static string GetCrvValueFromCurve(ECCurve curve)
+        internal static string GetCrvValueFromCurve(ECCurve curve)
         {
             return curve.Oid.Value switch
             {
@@ -119,7 +119,7 @@ namespace IdentityServer4.Configuration
             };
         }
 
-        public static bool IsValidCurveForAlgorithm(ECDsaSecurityKey key, string algorithm)
+        internal static bool IsValidCurveForAlgorithm(ECDsaSecurityKey key, string algorithm)
         {
             var parameters = key.ECDsa.ExportParameters(false);
 
@@ -132,14 +132,14 @@ namespace IdentityServer4.Configuration
 
             return true;
         }
-        public static bool IsValidCrvValueForAlgorithm(string crv)
+        internal static bool IsValidCrvValueForAlgorithm(string crv)
         {
             return crv == JsonWebKeyECTypes.P256 ||
                    crv == JsonWebKeyECTypes.P384 ||
                    crv == JsonWebKeyECTypes.P521;
         }
 
-        public static string GetRsaSigningAlgorithmValue(IdentityServerConstants.RsaSigningAlgorithm value)
+        internal static string GetRsaSigningAlgorithmValue(IdentityServerConstants.RsaSigningAlgorithm value)
         {
             return value switch
             {
@@ -154,7 +154,7 @@ namespace IdentityServer4.Configuration
             };
         }
 
-        public static string GetECDsaSigningAlgorithmValue(IdentityServerConstants.ECDsaSigningAlgorithm value)
+        internal static string GetECDsaSigningAlgorithmValue(IdentityServerConstants.ECDsaSigningAlgorithm value)
         {
             return value switch
             {
@@ -165,7 +165,7 @@ namespace IdentityServer4.Configuration
             };
         }
 
-        public static X509Certificate2 FindCertificate(string name, StoreLocation location, NameType nameType)
+        internal static X509Certificate2 FindCertificate(string name, StoreLocation location, NameType nameType)
         {
             X509Certificate2 certificate = null;
 

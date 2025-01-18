@@ -11,7 +11,7 @@ using System.Net;
 
 namespace IdentityServer4.Endpoints
 {
-    public class EndSessionCallbackEndpoint : IEndpointHandler
+    internal class EndSessionCallbackEndpoint : IEndpointHandler
     {
         private readonly IEndSessionRequestValidator _endSessionRequestValidator;
         private readonly ILogger _logger;

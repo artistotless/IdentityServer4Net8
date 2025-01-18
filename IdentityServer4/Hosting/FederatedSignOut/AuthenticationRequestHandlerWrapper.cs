@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace IdentityServer4.Hosting.FederatedSignOut
 {
-    public class AuthenticationRequestHandlerWrapper : IAuthenticationRequestHandler
+    internal class AuthenticationRequestHandlerWrapper : IAuthenticationRequestHandler
     {
         private const string IframeHtml = "<iframe style='display:none' width='0' height='0' src='{0}'></iframe>";
 

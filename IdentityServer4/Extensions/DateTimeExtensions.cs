@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace IdentityServer4.Extensions
 {
-    public static class DateTimeExtensions
+    internal static class DateTimeExtensions
     {
         [DebuggerStepThrough]
         public static bool HasExceeded(this DateTime creationTime, int seconds, DateTime now)

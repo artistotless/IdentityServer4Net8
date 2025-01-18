@@ -119,7 +119,7 @@ namespace IdentityServer4.Models
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthorizationRequest"/> class.
         /// </summary>
-        public AuthorizationRequest(ValidatedAuthorizeRequest request)
+        internal AuthorizationRequest(ValidatedAuthorizeRequest request)
         {
             Client = request.Client;
             RedirectUri = request.RedirectUri;

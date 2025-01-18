@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace IdentityServer4.Models
 {
-    public static class ScopeExtensions
+    internal static class ScopeExtensions
     {
         [DebuggerStepThrough]
         public static string ToSpaceSeparatedString(this IEnumerable<ApiScope> apiScopes)

@@ -15,7 +15,7 @@ using System.Security.Claims;
 
 namespace IdentityServer4.Validation
 {
-    public class AuthorizeRequestValidator : IAuthorizeRequestValidator
+    internal class AuthorizeRequestValidator : IAuthorizeRequestValidator
     {
         private readonly IdentityServerOptions _options;
         private readonly IClientStore _clients;

@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace IdentityServer4.Extensions
 {
-    public static class ClaimsExtensions
+    internal static class ClaimsExtensions
     {
         public static Dictionary<string, object> ToClaimsDictionary(this IEnumerable<Claim> claims)
         {

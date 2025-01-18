@@ -12,7 +12,7 @@ using System.Collections.Specialized;
 
 namespace IdentityServer4.Validation
 {
-    public class DeviceAuthorizationRequestValidator : IDeviceAuthorizationRequestValidator
+    internal class DeviceAuthorizationRequestValidator : IDeviceAuthorizationRequestValidator
     {
         private readonly IdentityServerOptions _options;
         private readonly IResourceValidator _resourceValidator;

@@ -46,7 +46,7 @@ namespace Microsoft.AspNetCore.Builder
             return app;
         }
 
-        public static void Validate(this IApplicationBuilder app)
+        internal static void Validate(this IApplicationBuilder app)
         {
             var loggerFactory = app.ApplicationServices.GetService(typeof(ILoggerFactory)) as ILoggerFactory;
             if (loggerFactory == null) throw new ArgumentNullException(nameof(loggerFactory));
@@ -135,7 +135,7 @@ namespace Microsoft.AspNetCore.Builder
             if (options.Cors.CorsPolicyName.IsMissing()) throw new InvalidOperationException("CorsPolicyName is not configured");
         }
 
-        public static object TestService(IServiceProvider serviceProvider, Type service, ILogger logger, string message = null, bool doThrow = true)
+        internal static object TestService(IServiceProvider serviceProvider, Type service, ILogger logger, string message = null, bool doThrow = true)
         {
             var appService = serviceProvider.GetService(service);
 

@@ -11,7 +11,7 @@ namespace IdentityServer4.Storage
     /// <summary>
     /// Model properties of an IdentityServer user
     /// </summary>
-    public class IdentityServerUser
+    internal class IdentityServerUser
     {
         /// <summary>
         /// Subject ID (mandatory)

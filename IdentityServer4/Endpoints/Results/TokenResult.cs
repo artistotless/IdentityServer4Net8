@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    public class TokenResult : IEndpointResult
+    internal class TokenResult : IEndpointResult
     {
         public TokenResponse Response { get; set; }
 
@@ -39,7 +39,7 @@ namespace IdentityServer4.Endpoints.Results
             await context.Response.WriteJsonAsync(dto);
         }
 
-        public class ResultDto
+        internal class ResultDto
         {
             public string id_token { get; set; }
             public string access_token { get; set; }

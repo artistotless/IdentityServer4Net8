@@ -11,7 +11,7 @@ using System.Collections.Specialized;
 
 namespace IdentityServer4.Services
 {
-    public class OidcReturnUrlParser : IReturnUrlParser
+    internal class OidcReturnUrlParser : IReturnUrlParser
     {
         private readonly IAuthorizeRequestValidator _validator;
         private readonly IUserSession _userSession;

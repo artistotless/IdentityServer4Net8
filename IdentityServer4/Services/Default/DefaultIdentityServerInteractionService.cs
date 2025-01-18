@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace IdentityServer4.Services
 {
-    public class DefaultIdentityServerInteractionService : IIdentityServerInteractionService
+    internal class DefaultIdentityServerInteractionService : IIdentityServerInteractionService
     {
         private readonly ISystemClock _clock;
         private readonly IHttpContextAccessor _context;

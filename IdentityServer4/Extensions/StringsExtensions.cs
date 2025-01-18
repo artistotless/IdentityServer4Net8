@@ -10,7 +10,7 @@ using System.Text.Encodings.Web;
 
 namespace IdentityServer4.Extensions
 {
-    public static class StringExtensions
+    internal static class StringExtensions
     {
         [DebuggerStepThrough]
         public static string ToSpaceSeparatedString(this IEnumerable<string> list)

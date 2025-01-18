@@ -8,7 +8,7 @@ using static IdentityServer4.Constants;
 
 namespace IdentityServer4.Extensions
 {
-    public static class EndpointOptionsExtensions
+    internal static class EndpointOptionsExtensions
     {
         public static bool IsEndpointEnabled(this EndpointsOptions options, Endpoint endpoint)
         {

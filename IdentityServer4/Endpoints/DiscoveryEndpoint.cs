@@ -12,7 +12,7 @@ using System.Net;
 
 namespace IdentityServer4.Endpoints
 {
-    public class DiscoveryEndpoint : IEndpointHandler
+    internal class DiscoveryEndpoint : IEndpointHandler
     {
         private readonly ILogger _logger;
 

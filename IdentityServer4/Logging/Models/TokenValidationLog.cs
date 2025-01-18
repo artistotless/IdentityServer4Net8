@@ -3,7 +3,7 @@
 
 namespace IdentityServer4.Logging.Models
 {
-    public class TokenValidationLog
+    internal class TokenValidationLog
     {
         // identity token
         public string ClientId { get; set; }

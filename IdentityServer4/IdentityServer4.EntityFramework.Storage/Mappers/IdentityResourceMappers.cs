@@ -18,7 +18,7 @@ namespace IdentityServer4.EntityFramework.Mappers
             Mapper = config.CreateMapper();
         }
 
-        public static IMapper Mapper { get; }
+        internal static IMapper Mapper { get; }
 
         /// <summary>
         /// Maps an entity to a model.

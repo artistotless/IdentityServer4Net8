@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    public class UserInfoResult : IEndpointResult
+    internal class UserInfoResult : IEndpointResult
     {
         public Dictionary<string, object> Claims;
 

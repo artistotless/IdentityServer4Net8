@@ -13,7 +13,7 @@ using System.Text.Encodings.Web;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    public class EndSessionCallbackResult : IEndpointResult
+    internal class EndSessionCallbackResult : IEndpointResult
     {
         private readonly EndSessionCallbackValidationResult _result;
 
@@ -22,7 +22,7 @@ namespace IdentityServer4.Endpoints.Results
             _result = result ?? throw new ArgumentNullException(nameof(result));
         }
 
-        public EndSessionCallbackResult(
+        internal EndSessionCallbackResult(
             EndSessionCallbackValidationResult result,
             IdentityServerOptions options)
             : this(result)

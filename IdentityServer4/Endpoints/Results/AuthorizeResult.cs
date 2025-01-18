@@ -17,7 +17,7 @@ using System.Text.Encodings.Web;
 
 namespace IdentityServer4.Endpoints.Results
 {
-    public class AuthorizeResult : IEndpointResult
+    internal class AuthorizeResult : IEndpointResult
     {
         public AuthorizeResponse Response { get; }
 
@@ -26,7 +26,7 @@ namespace IdentityServer4.Endpoints.Results
             Response = response ?? throw new ArgumentNullException(nameof(response));
         }
 
-        public AuthorizeResult(
+        internal AuthorizeResult(
             AuthorizeResponse response,
             IdentityServerOptions options,
             IUserSession userSession,

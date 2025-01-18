@@ -17,7 +17,7 @@ using System.Text;
 
 namespace IdentityServer4.Validation
 {
-    public class TokenRequestValidator : ITokenRequestValidator
+    internal class TokenRequestValidator : ITokenRequestValidator
     {
         private readonly IdentityServerOptions _options;
         private readonly IAuthorizationCodeStore _authorizationCodeStore;

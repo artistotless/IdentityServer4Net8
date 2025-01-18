@@ -360,7 +360,7 @@ namespace IdentityServer4.Models
             }
         }
 
-        public class GrantTypeValidatingHashSet : ICollection<string>
+        internal class GrantTypeValidatingHashSet : ICollection<string>
         {
             private readonly ICollection<string> _inner;
 

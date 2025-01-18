@@ -3,13 +3,12 @@
 
 
 using IdentityModel;
-using IdentityServer4.Configuration.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
 namespace IdentityServer4.AspNetIdentity
 {
-    public class UserClaimsFactory<TUser> : IUserClaimsPrincipalFactory<TUser>
+    internal class UserClaimsFactory<TUser> : IUserClaimsPrincipalFactory<TUser>
         where TUser : class
     {
         private readonly Decorator<IUserClaimsPrincipalFactory<TUser>> _inner;

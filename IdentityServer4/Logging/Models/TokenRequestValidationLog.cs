@@ -7,7 +7,7 @@ using IdentityServer4.Validation;
 
 namespace IdentityServer4.Logging.Models
 {
-    public class TokenRequestValidationLog
+    internal class TokenRequestValidationLog
     {
         public string ClientId { get; set; }
         public string ClientName { get; set; }
