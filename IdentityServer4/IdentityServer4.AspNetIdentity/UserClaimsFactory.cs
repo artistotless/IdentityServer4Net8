@@ -3,6 +3,7 @@
 
 
 using IdentityModel;
+using IdentityServer4.Configuration.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
