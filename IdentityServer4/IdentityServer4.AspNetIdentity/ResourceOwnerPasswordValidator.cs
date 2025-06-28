@@ -6,7 +6,7 @@ using IdentityServer4.Models;
 using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using static IdentityModel.OidcConstants;
+using static Duende.IdentityModel.OidcConstants;
 
 namespace IdentityServer4.AspNetIdentity
 {
