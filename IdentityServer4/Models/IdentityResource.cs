@@ -43,7 +43,7 @@ namespace IdentityServer4.Models
         public IdentityResource(string name, string displayName, IEnumerable<string> userClaims)
         {
             if (name.IsMissing()) throw new ArgumentNullException(nameof(name));
-            if (userClaims.IsNullOrEmpty()) throw new ArgumentException("Must provide at least one claim type", nameof(userClaims));
+            if (userClaims.IsNullOrEmptySource()) throw new ArgumentException("Must provide at least one claim type", nameof(userClaims));
 
             Name = name;
             DisplayName = displayName;

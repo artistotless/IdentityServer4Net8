@@ -660,7 +660,7 @@ namespace IdentityServer4.Validation
             {
                 _logger.LogTrace("Client provided no scopes - checking allowed scopes list");
 
-                if (!_validatedRequest.Client.AllowedScopes.IsNullOrEmpty())
+                if (!_validatedRequest.Client.AllowedScopes.IsNullOrEmptySource())
                 {
                     // this finds all the scopes the client is allowed to access
                     var clientAllowedScopes = new List<string>();

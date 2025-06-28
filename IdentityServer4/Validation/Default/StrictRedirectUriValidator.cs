@@ -21,7 +21,7 @@ namespace IdentityServer4.Validation
         /// <returns></returns>
         protected bool StringCollectionContainsString(IEnumerable<string> uris, string requestedUri)
         {
-            if (uris.IsNullOrEmpty()) return false;
+            if (uris.IsNullOrEmptySource()) return false;
 
             return uris.Contains(requestedUri, StringComparer.OrdinalIgnoreCase);
         }

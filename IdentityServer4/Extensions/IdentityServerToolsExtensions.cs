@@ -46,7 +46,7 @@ namespace IdentityServer4
 
             claims.Add(new Claim(JwtClaimTypes.ClientId, clientId));
 
-            if (!scopes.IsNullOrEmpty())
+            if (!scopes.IsNullOrEmptySource())
             {
                 foreach (var scope in scopes)
                 {
@@ -59,7 +59,7 @@ namespace IdentityServer4
                 claims.Add(new Claim(JwtClaimTypes.Audience, string.Format(IdentityServerConstants.AccessTokenAudience, tools.ContextAccessor.HttpContext.GetIdentityServerIssuerUri().EnsureTrailingSlash())));
             }
 
-            if (!audiences.IsNullOrEmpty())
+            if (!audiences.IsNullOrEmptySource())
             {
                 foreach (var audience in audiences)
                 {
