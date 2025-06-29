@@ -1,7 +1,7 @@
-using Duende.IdentityModel;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
+using Duende.IdentityModel;
 
 namespace IdentityServer4.Extensions
 {

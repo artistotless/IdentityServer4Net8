@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using Duende.IdentityModel;
-using IdentityServer4.Extensions;
 using System.Security.Cryptography;
 using System.Text;
+using Duende.IdentityModel;
+using IdentityServer4.Extensions;
 
 #pragma warning disable 1591
 

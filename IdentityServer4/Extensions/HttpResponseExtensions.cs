@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using System.Text;
 using IdentityServer4.Configuration;
 using IdentityServer4.Models;
 using Microsoft.AspNetCore.Http;
-using System.Text;
 
 #pragma warning disable 1591
 

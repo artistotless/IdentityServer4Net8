@@ -1,7 +1,7 @@
+using System.Security.Cryptography.X509Certificates;
 using IdentityServer4.Extensions;
 using IdentityServer4.Models;
 using Microsoft.Extensions.Logging;
-using System.Security.Cryptography.X509Certificates;
 using static IdentityServer4.IdentityServerConstants;
 
 namespace IdentityServer4.Validation

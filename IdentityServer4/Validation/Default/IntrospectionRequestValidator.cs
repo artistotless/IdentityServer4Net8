@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using System.Collections.Specialized;
 using IdentityServer4.Models;
 using Microsoft.Extensions.Logging;
-using System.Collections.Specialized;
 
 namespace IdentityServer4.Validation
 {
